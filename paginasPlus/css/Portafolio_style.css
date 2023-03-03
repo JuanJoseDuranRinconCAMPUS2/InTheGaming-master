@@ -1,0 +1,194 @@
+.body {
+    background: linear-gradient( rgb(0, 92, 191), #7b3f5f);
+    background-repeat: no-repeat;
+  }
+
+
+.contenedor{
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo button{
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 76px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-brush-brush-art-strokes-png-image_4365600.png") no-repeat 50% 50%;
+    mask: url("https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-brush-brush-art-strokes-png-image_4365600.png") no-repeat 50% 50%; 
+    -webkit-mask-size: 100%; /*Warning por uso de etiqueta de dudosa adaptibilidad*/
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+}
+
+.logo button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover{
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.logo button span{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    left: 50%;
+    top: 50%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover span{
+    color:yellow;    
+}
+
+.logo button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(125, 0, 142); /*Linea del Color de la animacion*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.logo button:hover::before{
+    width: 100%;
+}
+
+
+#portada{
+    transition: 2s ease-out 100ms;
+    -webkit-transition: 2s ease-out 100ms;
+    -moz-transition: 2s ease-out 100ms;
+    -ms-transition: 2s ease-out 100ms;
+    -o-transition: 2s ease-out 100ms;
+}
+
+#portada:hover{
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 15px 15px #570083;
+        -webkit-box-shadow: 0px 0px 15px 15px #570083;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transition: all 2s;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -ms-transition: all 2s;
+        -o-transition: all 2s;
+}
+
+.espaciado{
+    background-image:URL("");
+    background-size: cover;
+}
+
+.img{
+     z-index:1;
+     display:flex;
+     justify-content: center;
+     position: absolute;
+     left:0px;
+     right: 0px;
+     margin: auto;
+ }
+.igm{
+     width: 500px;
+     left:0px;
+     right: 0px;
+     border-radius: 300px;
+     border-style: solid;
+     border-color:  #a755ba;
+ }
+ 
+ .card{
+     width: 250px;
+     height: 400px;
+     overflow-wrap:break-word;
+     margin: 10px;
+     display:flex;
+     justify-content: center;
+     
+     
+ }
+ 
+ 
+ .image{
+     width: 100%;
+ }
+ 
+ .espaciado{
+     height: 400px;
+ }
+ 
+
+ 
+ .card-body{
+ display: none;
+ }
+ 
+ .card:hover > .card-body{
+ display:block;
+ }
+ 
+ .center{
+     display:flex;
+     width: 50%; 
+     flex-wrap: wrap;
+     left: 0px;
+     right: 0px;
+     margin: auto;
+     padding-top: 300px;
+     justify-content: center;
+ }
+ 
+ 
